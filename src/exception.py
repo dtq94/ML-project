@@ -17,7 +17,3 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
     
-try:
-    x = 1 / 0  # This will raise ZeroDivisionError
-except Exception as e:
-    logging.error(f"Error occurred: {e}")
